@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.boton-nav {
+    border: 2px solid black;
+
+    &:hover {
+        background-color: rgb(3, 51, 25);
+        color: white;
+    }
+}
+
+.nav-item dropdown {
+    color: rgb(3, 51, 25);
+}
+
+.barranav {
+    display: inline-block
+}
