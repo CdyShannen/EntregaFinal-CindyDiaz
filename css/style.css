@@ -104,7 +104,7 @@ header nav ul li {
     font-size: 60px;
     font-family: 'Fjalla One', sans-serif;
     text-align: center;
-    color: white;
+    color: black;
 }
 
 .hero div p {
@@ -214,8 +214,7 @@ header nav ul li {
 
 
 section h1 {
-    color: white;
-    background-color: rgba(0, 0, 0, 0.507);
+    color: black;
     text-align: center;
     font-size: 30px;
     font-family: 'Fjalla One', sans-serif;
@@ -280,7 +279,7 @@ section h1 {
     font-size: 60px;
     font-family: 'Fjalla One', sans-serif;
     text-align: center;
-    color:black;
+    color: black;
 }
 
 .filosofia div p {
@@ -300,7 +299,7 @@ section h1 {
     align-items: center;
     margin: 30px;
     color: black;
-} 
+}
 
 .valores div {
     flex-direction: column;
@@ -308,14 +307,14 @@ section h1 {
     margin: auto;
 }
 
-.valores div h2{
+.valores div h2 {
     font-family: 'Fjalla One', sans-serif;
     font-size: 40px;
     padding: 15px;
     text-align: center;
 }
 
-.valores div p{
+.valores div p {
     background-color: rgba(0, 0, 0, 0.705);
     color: white;
     font-size: 20px;
@@ -323,7 +322,7 @@ section h1 {
     margin-top: 10px;
 }
 
-.valores-2{
+.valores-2 {
     display: flex;
     flex: wrap;
     justify-content: center;
@@ -333,7 +332,7 @@ section h1 {
     background-size: cover;
 }
 
-.valores-2 h2{
+.valores-2 h2 {
     font-family: 'Fjalla One', sans-serif;
     font-size: 40px;
     padding: 20px;
@@ -342,11 +341,41 @@ section h1 {
     color: black;
 }
 
-.valores-2 ul{
+.valores-2 ul {
     color: black;
     font-size: 20px;
     padding: 30px;
     margin-top: 10px;
+}
+
+/*CUIDADOS Y TIPS*/
+.layout {
+    width: 100%;
+    height: 768px;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-top: 50px;
+}
+
+.layout div img{
+    width: 300px;
+    height: 300px;
+}
+
+.layout div {
+    align-items: center;
+    padding: 50px;
+}
+
+.layout div p {
+    font-size: 20px;
+    font-family: 'Fjalla One', sans-serif;
+    text-align: center;
+    color:black;
+    width: 100%;
+    padding: 40px;
 }
 
 
@@ -359,6 +388,7 @@ h1 {
     font-weight: 300px;
     margin-top: 15px;
 }
+
 form {
     max-width: 600px;
     margin: 0 auto;
