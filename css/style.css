@@ -145,6 +145,7 @@ header nav ul li {
     width: 100%;
 }
 
+/*verificar si lo tomo el sass*/
 .index div:hover img {
     transform: scale(1.1);
 }
