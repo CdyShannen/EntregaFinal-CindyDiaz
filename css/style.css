@@ -4,12 +4,12 @@
     box-sizing: border-box;
 }
 
-/*!BODY*/
+/*BODY*/
 body {
     background-image: url(../images/backgroundimage-principal.jpeg);
 }
 
-/*!HEADER*/
+/*HEADER*/
 
 header {
     font-family: 'Fjalla One', sans-serif;
@@ -134,11 +134,6 @@ header nav ul li {
     color: white;
     width: 100%;
     padding: 20px;
-}
-
-.imagenplanta img {
-    width: 100%;
-    height: 100%;
 }
 
 .index {
@@ -349,35 +344,45 @@ section h1 {
 }
 
 /*CUIDADOS Y TIPS*/
-.layout {
-    width: 100%;
-    height: 768px;
-    display: grid;
-    grid-template-rows: repeat(3, 1fr);
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
-    margin-top: 50px;
-}
 
-.layout div img{
-    width: 300px;
-    height: 300px;
-}
-
-.layout div {
-    align-items: center;
-    padding: 50px;
-}
-
-.layout div p {
-    font-size: 20px;
-    font-family: 'Fjalla One', sans-serif;
+section h1 {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.507);
     text-align: center;
-    color:black;
-    width: 100%;
-    padding: 40px;
+    font-size: 30px;
+    font-family: 'Fjalla One', sans-serif;
+    font-weight: 300;
+    padding: 15px;
 }
 
+.cuidados {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+}
+
+.cuidados>div {
+    flex-basis: calc(25% - 80px); 
+    text-align: center;
+    font-family: 'Fjalla One', sans-serif;
+    margin: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: black;
+}
+
+.cuidados div img {
+    max-width: 100%;
+    margin-bottom: 10px;
+}
+
+.cuidados h2, .cuidados p {
+    margin: 10px 0;
+}
 
 /*PAGINA DE CONTACTO*/
 h1 {
@@ -472,6 +477,7 @@ footer.footer-grids h2 {
 footer.footer-grids p {
     line-height: 1.4;
 }
+
 
 /*pantallas más pequeñas (max-width: 1222px) */
 @media screen and (max-width: 1222px) {
@@ -600,5 +606,145 @@ footer.footer-grids p {
     .imagenplanta img {
         width: 80%;
         height: auto;
+    }
+}
+
+/*Estilos para pantallas más pequeñas (a partir de 530px) */
+@media screen and (max-width: 530px) {
+    header div h1 {
+        font-size: 28px;
+    }
+
+    header div h2 {
+        font-size: 18px;
+    }
+
+    header div h3 {
+        font-size: 16px;
+    }
+
+    header nav ul li {
+        margin: 8px;
+    }
+
+    header div ul li a {
+        font-size: 18px;
+        padding: 5px;
+    }
+
+    .navbar-brand img {
+        width: 120px;
+        height: auto;
+    }
+
+    .navbar-toggler {
+        margin-top: 5px;
+    }
+
+    .navbar-collapse {
+        text-align: center;
+    }
+
+    .navbar-collapse form {
+        margin-top: 10px;
+    }
+
+    .filosofia div h2,
+    .valores div h2 {
+        font-size: 24px;
+    }
+
+    .filosofia div p,
+    .valores div p {
+        font-size: 16px;
+    }
+
+    .valores-2 h2 {
+        font-size: 24px;
+    }
+
+    .valores-2 ul {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    footer.footer-grids img {
+        width: 40px;
+        height: 40px;
+    }
+
+    footer.footer-grids h2 {
+        font-size: 18px;
+        margin: 8px 0;
+    }
+
+    footer.footer-grids p {
+        font-size: 14px;
+    }
+}
+
+/* Estilos para pantallas más pequeñas (a partir de 428px) */
+@media screen and (max-width: 428px) {
+    header div h1 {
+        font-size: 26px;
+    }
+
+    header div h2 {
+        font-size: 16px;
+    }
+
+    header div h3 {
+        font-size: 14px;
+    }
+
+    header nav ul li {
+        margin: 6px;
+    }
+
+    header div ul li a {
+        font-size: 16px;
+        padding: 5px;
+    }
+
+    .navbar-brand img {
+        width: 100px;
+        height: auto;
+    }
+
+    .navbar-toggler {
+        margin-top: 3px;
+    }
+
+    .filosofia div h2,
+    .valores div h2 {
+        font-size: 20px;
+    }
+
+    .filosofia div p,
+    .valores div p {
+        font-size: 14px;
+    }
+
+    .valores-2 h2 {
+        font-size: 20px;
+    }
+
+    .valores-2 ul {
+        font-size: 14px;
+        line-height: 1.4;
+    }
+
+    footer.footer-grids img {
+        width: 36px;
+        height: 36px;
+    }
+
+    footer.footer-grids h2 {
+        font-size: 16px;
+        margin: 6px 0;
+    }
+
+    footer.footer-grids p {
+        font-size: 12px;
     }
 }

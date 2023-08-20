@@ -15,13 +15,18 @@
 .barranav {
   display: inline-block; }
 
+.index div:hover {
+  transform: scale(1.1); }
+
+.index:hover::before {
+  opacity: 1; }
+
 body {
   background-image: url(../images/backgroundimage-principal.jpeg); }
   body header {
     font-family: "Fjalla One", sans-serif;
     text-align: center;
-    font-size: 25px;
-    padding: 10px 0; }
+    font-size: 25px; }
     body header div h1 {
       color: black;
       text-align: center;
@@ -52,3 +57,85 @@ body {
         display: flex; }
         body header nav div div ul li {
           margin: 0 10px; }
+
+main .hero {
+  text-align: center;
+  width: 100%;
+  background-image: url(../images/plantas-index-header.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 200px; }
+  main .hero div h1 {
+    font-size: 60px;
+    font-family: "Fjalla One", sans-serif;
+    text-align: center;
+    color: black; }
+  main .hero div p {
+    font-size: 30px;
+    font-family: "Fjalla One", sans-serif;
+    text-align: center;
+    color: #f7f1f1;
+    background-color: rgba(0, 0, 0, 0.705);
+    width: 100%;
+    padding: 20px; }
+
+main .imagenplanta {
+  display: flex;
+  flex: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 30px;
+  background-color: rgba(0, 0, 0, 0.705); }
+  main .imagenplanta p {
+    font-size: 20px;
+    font-weight: 300px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    text-align: center;
+    color: white;
+    width: 100%;
+    padding: 20px; }
+
+main .index {
+  font-size: 30px;
+  font-family: "Fjalla One", sans-serif;
+  text-align: center;
+  color: black;
+  padding: 60px;
+  width: 100%; }
+  main .index div {
+    width: 300px;
+    height: 400px;
+    text-align: center;
+    font-family: "Fjalla One", sans-serif;
+    margin: 25px;
+    display: inline-block; }
+    main .index div img {
+      width: 250px;
+      height: 300px;
+      transition: all 0.3s ease; }
+    main .index div h3 {
+      font-family: "Fjalla One", sans-serif;
+      font-size: 30px;
+      margin-top: 20px; }
+
+footer.footer-grids {
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  justify-content: center;
+  text-align: center; }
+  footer.footer-grids div {
+    font-family: "Segoe UI", Roboto, Arial, sans-serif;
+    color: white; }
+    footer.footer-grids div img {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); }
+    footer.footer-grids div h2 {
+      margin: 10px 0;
+      font-size: 1.2rem; }
+    footer.footer-grids div p {
+      line-height: 1.4; }
