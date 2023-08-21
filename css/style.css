@@ -365,7 +365,7 @@ section h1 {
 }
 
 .cuidados>div {
-    flex-basis: calc(25% - 80px); 
+    flex-basis: calc(25% - 80px);
     text-align: center;
     font-family: 'Fjalla One', sans-serif;
     margin: 20px;
@@ -381,7 +381,8 @@ section h1 {
     margin-bottom: 10px;
 }
 
-.cuidados h2, .cuidados p {
+.cuidados h2,
+.cuidados p {
     margin: 10px 0;
 }
 
@@ -749,3 +750,5 @@ footer.footer-grids p {
         font-size: 12px;
     }
 }
+
+
