@@ -1,4 +1,3 @@
-@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -21,6 +20,11 @@
 
 .index:hover::before {
   opacity: 1; }
+
+main .imagenplanta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
 
 @media screen and (max-width: 1222px) {
   header {
@@ -93,7 +97,6 @@
     width: 80%;
     height: auto; } }
 
-/*Estilos para pantallas más pequeñas (a partir de 530px) */
 @media screen and (max-width: 530px) {
   header div h1 {
     font-size: 28px; }
@@ -135,7 +138,6 @@
   footer.footer-grids p {
     font-size: 14px; } }
 
-/* Estilos para pantallas más pequeñas (a partir de 428px) */
 @media screen and (max-width: 428px) {
   header div h1 {
     font-size: 26px; }
@@ -189,7 +191,7 @@ body {
       color: #033319;
       text-align: center;
       font-size: 25px;
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif; }
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif; }
     body header div h3 {
       background-color: #033319;
       color: white;
@@ -232,10 +234,7 @@ main .hero {
     padding: 20px; }
 
 main .imagenplanta {
-  display: flex;
   flex: wrap;
-  justify-content: space-between;
-  align-items: center;
   margin: 30px;
   background-color: rgba(0, 0, 0, 0.705); }
   main .imagenplanta p {
@@ -248,10 +247,10 @@ main .imagenplanta {
     padding: 20px; }
 
 main .index {
+  font-family: "Fjalla One" sans-serif;
   font-size: 30px;
-  font-family: "Fjalla One", sans-serif;
-  text-align: center;
   color: black;
+  text-align: center;
   padding: 60px;
   width: 100%; }
   main .index div {
@@ -271,12 +270,12 @@ main .index {
       margin-top: 20px; }
 
 main .productos h1 {
+  font-family: "Fjalla One" sans-serif;
+  font-size: 30px;
   color: white;
   background-color: rgba(0, 0, 0, 0.507);
   text-align: center;
-  font-size: 30px;
-  font-family: "Fjalla One", sans-serif;
-  font-weight: 300;
+  font-weight: 300px;
   padding: 15px; }
 
 main .productos div img {
@@ -289,27 +288,27 @@ main .productos div img {
 
 main .productos > div {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
   text-align: center;
   font-family: "Fjalla One", sans-serif;
   margin: 40px;
   padding: 30px;
   height: 30rem;
-  justify-content: space-between;
-  align-items: center;
   flex-wrap: wrap;
   color: black; }
 
 main section h1 {
-  color: black;
-  text-align: center;
+  font-family: "Fjalla One" sans-serif;
   font-size: 30px;
-  font-family: "Fjalla One", sans-serif;
-  font-weight: 300;
-  padding: 15px;
-  margin: 20px;
+  color: black;
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  text-align: center;
+  font-weight: 300;
+  padding: 15px;
+  margin: 20px; }
 
 main .macetas {
   display: flex;
@@ -349,7 +348,16 @@ main .filosofia {
     font-size: 60px;
     font-family: "Fjalla One", sans-serif;
     text-align: center;
-    color: black; }
+    color: black;
+    animation: slide 5s ease-in-out; }
+
+@keyframes slide {
+  0% {
+    transform: translateX(0); }
+  50% {
+    transform: translateX(10px); }
+  100% {
+    transform: translateX(0); } }
   main .filosofia div p {
     font-size: 25px;
     font-family: "Fjalla One", sans-serif;
@@ -361,9 +369,9 @@ main .filosofia {
 
 main .valores {
   display: flex;
-  flex: wrap;
   justify-content: space-between;
   align-items: center;
+  flex: wrap;
   margin: 30px;
   color: black; }
   main .valores div {
@@ -374,7 +382,16 @@ main .valores {
       font-family: "Fjalla One", sans-serif;
       font-size: 40px;
       padding: 15px;
-      text-align: center; }
+      text-align: center;
+      animation: slide 5s ease-in-out; }
+
+@keyframes slide {
+  0% {
+    transform: translateX(0); }
+  50% {
+    transform: translateX(10px); }
+  100% {
+    transform: translateX(0); } }
     main .valores div p {
       background-color: rgba(0, 0, 0, 0.705);
       color: white;
@@ -384,9 +401,9 @@ main .valores {
 
 main .valores-2 {
   display: flex;
-  flex: wrap;
   justify-content: center;
   align-items: center;
+  flex: wrap;
   background-image: url(../images/valores-filosofia.jpg?);
   background-repeat: no-repeat;
   background-size: cover; }
@@ -396,7 +413,16 @@ main .valores-2 {
     padding: 20px;
     text-align: center;
     margin: 10px;
-    color: black; }
+    color: black;
+    animation: slide 5s ease-in-out; }
+
+@keyframes slide {
+  0% {
+    transform: translateX(0); }
+  50% {
+    transform: translateX(10px); }
+  100% {
+    transform: translateX(0); } }
   main .valores-2 ul {
     color: black;
     font-size: 20px;

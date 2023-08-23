@@ -1,0 +1,21 @@
+$color-primario: black;
+$color-secundario: #033319;
+$color-terciario: white;
+
+%flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin flex($flex, $justify, $aling){
+    display: $flex;
+    justify-content: $justify;
+    align-items: $aling;
+}
+
+@mixin text($font-family, $font-size, $color){
+    font-family: $font-family;
+    font-size: $font-size;
+    color: $color;
+}

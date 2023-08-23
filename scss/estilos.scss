@@ -1,4 +1,5 @@
 @import "./base/generales";
+@import "./base/variables";
 @import "./base/mediaquery";
 
 body {
@@ -9,28 +10,18 @@ body {
         font-size: 25px;
         div {
             h1 {
-                color: black;
+                color: $color-primario;
                 text-align: center;
                 font-size: 55px;
                 font-family: "Fjalla One", sans-serif;
                 font-weight: 300px;
             }
             h2 {
-                color: rgb(3, 51, 25);
+                color: $color-secundario;
                 text-align: center;
                 font-size: 25px;
-                font-family:
-                    system-ui,
-                    -apple-system,
-                    BlinkMacSystemFont,
-                    "Segoe UI",
-                    Roboto,
-                    Oxygen,
-                    Ubuntu,
-                    Cantarell,
-                    "Open Sans",
-                    "Helvetica Neue",
-                    sans-serif;
+                font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
+                    "Open Sans", "Helvetica Neue", sans-serif;
             }
             h3 {
                 background-color: rgb(3, 51, 25);
@@ -88,7 +79,7 @@ main {
                 font-size: 60px;
                 font-family: "Fjalla One", sans-serif;
                 text-align: center;
-                color: black;
+                color: $color-primario;
             }
             p {
                 font-size: 30px;
@@ -102,10 +93,8 @@ main {
         }
     }
     .imagenplanta {
-        display: flex;
+        @extend %flex;
         flex: wrap;
-        justify-content: space-between;
-        align-items: center;
         margin: 30px;
         background-color: rgba(0, 0, 0, 0.705);
         p {
@@ -130,10 +119,8 @@ main {
         }
     }
     .index {
-        font-size: 30px;
-        font-family: "Fjalla One", sans-serif;
+        @include text("Fjalla One" sans-serif, 30px, $color-primario);
         text-align: center;
-        color: black;
         padding: 60px;
         width: 100%;
         div {
@@ -157,47 +144,37 @@ main {
     }
     .productos {
         h1 {
-            color: white;
+            @include text("Fjalla One" sans-serif, 30px, $color-terciario);
             background-color: rgba(0, 0, 0, 0.507);
             text-align: center;
-            font-size: 30px;
-            font-family: "Fjalla One", sans-serif;
-            font-weight: 300;
+            font-weight: 300px;
             padding: 15px;
         }
         div img {
             max-width: 300px;
             max-height: 300px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+            @include flex(flex, space-between, center);
             flex-wrap: wrap;
         }
         > div {
-            display: flex;
+            @include flex(flex, space-between, center);
             text-align: center;
             font-family: "Fjalla One", sans-serif;
             margin: 40px;
             padding: 30px;
             height: 30rem;
-            justify-content: space-between;
-            align-items: center;
             flex-wrap: wrap;
             color: black;
         }
     }
     section {
         h1 {
-            color: black;
+            @include text("Fjalla One" sans-serif, 30px, $color-primario);
+            @include flex(flex, center, center);
             text-align: center;
-            font-size: 30px;
-            font-family: "Fjalla One", sans-serif;
             font-weight: 300;
             padding: 15px;
             margin: 20px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
         }
     }
     .macetas {
@@ -267,6 +244,18 @@ main {
                 font-family: "Fjalla One", sans-serif;
                 text-align: center;
                 color: black;
+                animation: slide 5s ease-in-out;
+                @keyframes slide {
+                    0% {
+                        transform: translateX(0);
+                    }
+                    50% {
+                        transform: translateX(10px);
+                    }
+                    100% {
+                        transform: translateX(0);
+                    }
+                }
             }
             p {
                 font-size: 25px;
@@ -280,10 +269,8 @@ main {
         }
     }
     .valores {
-        display: flex;
+        @include flex(flex, space-between, center);
         flex: wrap;
-        justify-content: space-between;
-        align-items: center;
         margin: 30px;
         color: black;
         div {
@@ -295,10 +282,22 @@ main {
                 font-size: 40px;
                 padding: 15px;
                 text-align: center;
+                animation: slide 5s ease-in-out;
+                @keyframes slide {
+                    0% {
+                        transform: translateX(0);
+                    }
+                    50% {
+                        transform: translateX(10px);
+                    }
+                    100% {
+                        transform: translateX(0);
+                    }
+                }
             }
             p {
                 background-color: rgba(0, 0, 0, 0.705);
-                color: white;
+                color: $color-terciario;
                 font-size: 20px;
                 padding: 30px;
                 margin-top: 10px;
@@ -306,10 +305,8 @@ main {
         }
     }
     .valores-2 {
-        display: flex;
+        @include flex(flex, center, center);
         flex: wrap;
-        justify-content: center;
-        align-items: center;
         background-image: url(../images/valores-filosofia.jpg?);
         background-repeat: no-repeat;
         background-size: cover;
@@ -319,10 +316,22 @@ main {
             padding: 20px;
             text-align: center;
             margin: 10px;
-            color: black;
+            color: $color-primario;
+            animation: slide 5s ease-in-out;
+                @keyframes slide {
+                    0% {
+                        transform: translateX(0);
+                    }
+                    50% {
+                        transform: translateX(10px);
+                    }
+                    100% {
+                        transform: translateX(0);
+                    }
+                }
         }
         ul {
-            color: black;
+            color: $color-primario;
             font-size: 20px;
             padding: 30px;
             margin-top: 10px;
