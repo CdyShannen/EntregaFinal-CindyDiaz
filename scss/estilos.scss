@@ -96,7 +96,7 @@ main {
         @extend %flex;
         flex: wrap;
         margin: 30px;
-        background-color: rgba(0, 0, 0, 0.705);
+        background-color: $color-primario;
         p {
             font-size: 20px;
             font-weight: 300px;
@@ -150,7 +150,7 @@ main {
     .productos {
         h1 {
             @include text("Fjalla One" sans-serif, 30px, $color-terciario);
-            background-color: rgba(0, 0, 0, 0.507);
+            background-color: $color-primario;
             text-align: center;
             font-weight: 300px;
             padding: 15px;
@@ -169,7 +169,7 @@ main {
             padding: 30px;
             height: 30rem;
             flex-wrap: wrap;
-            color: black;
+            color: $color-primario;
         }
     }
     section {

@@ -245,7 +245,7 @@ main .hero {
 main .imagenplanta {
   flex: wrap;
   margin: 30px;
-  background-color: rgba(0, 0, 0, 0.705); }
+  background-color: black; }
   main .imagenplanta p {
     font-size: 20px;
     font-weight: 300px;
@@ -286,7 +286,7 @@ main .productos h1 {
   font-family: "Fjalla One" sans-serif;
   font-size: 30px;
   color: white;
-  background-color: rgba(0, 0, 0, 0.507);
+  background-color: black;
   text-align: center;
   font-weight: 300px;
   padding: 15px; }
