@@ -96,7 +96,7 @@ main {
         @extend %flex;
         flex: wrap;
         margin: 30px;
-        background-color: $color-primario;
+        background-color:$color-primario;
         p {
             font-size: 20px;
             font-weight: 300px;
@@ -113,9 +113,15 @@ main {
                 "Helvetica Neue",
                 sans-serif;
             text-align: center;
-            color: white;
+            color: $color-terciario;
             width: 100%;
             padding: 20px;
+            span{
+                color: $color-secundario;
+                font-size: 30px;
+                font-family: "Fjalla One", sans-serif;
+                font-weight: 300px;
+            }
         }
     }
     .index {
@@ -150,7 +156,7 @@ main {
     .productos {
         h1 {
             @include text("Fjalla One" sans-serif, 30px, $color-terciario);
-            background-color: $color-primario;
+            background-color: rgba(0, 0, 0, 0.507);
             text-align: center;
             font-weight: 300px;
             padding: 15px;
