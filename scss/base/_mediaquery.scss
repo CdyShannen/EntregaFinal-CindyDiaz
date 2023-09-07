@@ -162,6 +162,40 @@
 }
 
 
+@media screen and (max-width: 568px) {
+    body {
+        background-image: none; 
+    }
+
+    header div h1 {
+        font-size: 30px; 
+    }
+
+    main .hero {
+        padding: 100px;
+    }
+
+    main .imagenplanta p {
+        padding: 10px; 
+    }
+
+    main .index div {
+        width: 100%; 
+        text-align: center;
+    }
+
+    main .index div img {
+        width: 100%;
+        height: auto;
+    }
+
+    footer.footer-grids {
+        grid-template-columns: repeat(1, minmax(220px, 1fr));
+    }
+}
+
+
+
 @media screen and (max-width: 530px) {
     header div h1 {
         font-size: 28px;
