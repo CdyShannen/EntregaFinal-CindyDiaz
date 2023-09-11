@@ -164,11 +164,11 @@ main {
         div img {
             max-width: 300px;
             max-height: 300px;
-            @include flex(flex, space-between, center);
+            @include flex(flex, center, center);
             flex-wrap: wrap;
         }
         > div {
-            @include flex(flex, space-between, center);
+            @include flex(flex, center, center);
             text-align: center;
             font-family: "Fjalla One", sans-serif;
             margin: 40px;
@@ -190,7 +190,6 @@ main {
     .macetas {
         display: flex;
         align-items: center;
-        margin: 20px;
         .imagen-maceta {
             flex: 0 0 auto;
             margin: 35px;
@@ -216,7 +215,6 @@ main {
                 sans-serif;
             margin: 30px;
             flex-wrap: wrap;
-            padding: 10rem;
             h2 {
                 text-align: center;
                 color: black;

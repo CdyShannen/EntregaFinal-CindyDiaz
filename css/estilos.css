@@ -79,10 +79,13 @@ main .imagenplanta {
 
 @media screen and (max-width: 898px) {
   footer.footer-grids {
-    grid-template-columns: 1fr; }
-  footer.footer-grids img {
-    width: 60px;
-    height: 60px; }
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center; }
+  footer.footer-grids div {
+    width: 100%; }
   .barranav {
     display: block;
     margin-top: 10px; }
@@ -105,7 +108,21 @@ main .imagenplanta {
     margin: 0 auto; }
   .imagenplanta img {
     width: 80%;
-    height: auto; } }
+    height: auto; }
+  .productos div {
+    justify-content: center;
+    align-items: center;
+    text-align: center; } }
+
+@media screen and (max-width: 740px) {
+  footer.footer-grids {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center; }
+  footer.footer-grids div {
+    width: 100%; } }
 
 @media (max-width: 602px) {
   main .hero {
@@ -201,33 +218,6 @@ main .imagenplanta {
   footer.footer-grids p {
     font-size: 14px; } }
 
-@media (max-width: 526px) {
-  main .hero {
-    padding: 100px;
-    /* Ajusta el padding para adaptarse a pantallas más pequeñas */ }
-  main .hero div h1 {
-    font-size: 40px;
-    /* Ajusta el tamaño del título */ }
-  main .hero div p {
-    font-size: 20px;
-    /* Ajusta el tamaño del párrafo */
-    padding: 10px;
-    /* Ajusta el padding del párrafo */ }
-  main .imagenplanta p {
-    font-size: 18px;
-    /* Ajusta el tamaño del texto */
-    padding: 10px;
-    /* Ajusta el padding del párrafo */ }
-  main .imagenplanta div.maps {
-    margin: 10px;
-    /* Ajusta el margen del mapa */ }
-  main .index {
-    padding: 30px;
-    /* Ajusta el padding */ }
-  footer.footer-grids div {
-    margin: 10px;
-    /* Ajusta el margen en el footer */ } }
-
 @media screen and (max-width: 500px) {
   body {
     background-image: none; }
@@ -252,46 +242,10 @@ main .imagenplanta {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
     text-align: center; }
   footer.footer-grids div {
     width: 100%; } }
-
-@media screen and (max-width: 428px) {
-  header div h1 {
-    font-size: 26px; }
-  header div h2 {
-    font-size: 16px; }
-  header div h3 {
-    font-size: 14px; }
-  header nav ul li {
-    margin: 6px; }
-  header div ul li a {
-    font-size: 16px;
-    padding: 5px; }
-  .navbar-brand img {
-    width: 100px;
-    height: auto; }
-  .navbar-toggler {
-    margin-top: 3px; }
-  .filosofia div h2,
-  .valores div h2 {
-    font-size: 20px; }
-  .filosofia div p,
-  .valores div p {
-    font-size: 14px; }
-  .valores-2 h2 {
-    font-size: 20px; }
-  .valores-2 ul {
-    font-size: 14px;
-    line-height: 1.4; }
-  footer.footer-grids img {
-    width: 36px;
-    height: 36px; }
-  footer.footer-grids h2 {
-    font-size: 16px;
-    margin: 6px 0; }
-  footer.footer-grids p {
-    font-size: 12px; } }
 
 body {
   background-image: url(../images/backgroundimage-principal.jpeg); }
@@ -409,19 +363,18 @@ main .productos div img {
   max-width: 300px;
   max-height: 300px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   flex-wrap: wrap; }
 
 main .productos > div {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   text-align: center;
   font-family: "Fjalla One", sans-serif;
   margin: 40px;
   padding: 30px;
-  height: 30rem;
   flex-wrap: wrap;
   color: black; }
 
@@ -439,8 +392,7 @@ main section h1 {
 
 main .macetas {
   display: flex;
-  align-items: center;
-  margin: 20px; }
+  align-items: center; }
   main .macetas .imagen-maceta {
     flex: 0 0 auto;
     margin: 35px; }
@@ -452,8 +404,7 @@ main .macetas {
     font-size: 20px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
     margin: 30px;
-    flex-wrap: wrap;
-    padding: 10rem; }
+    flex-wrap: wrap; }
     main .macetas .textomacetas h2 {
       text-align: center;
       color: black;
