@@ -131,7 +131,49 @@
         width: 80%;
         height: auto;
     }
+
+    .productos{
+        div{
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+    }
 }
+
+@media (max-width: 602px) {
+    main .hero {
+        padding: 100px; 
+    }
+
+    main .hero div h1 {
+        font-size: 40px; 
+    }
+
+    main .hero div p {
+        font-size: 20px; 
+        padding: 10px; 
+    }
+
+    main .imagenplanta p {
+        font-size: 18px; 
+        padding: 10px; 
+    }
+
+    main .imagenplanta div.maps {
+        margin: 10px; 
+    }
+
+    main .index {
+        padding: 30px; 
+    }
+
+    footer.footer-grids div {
+        margin: 10px; 
+    }
+}
+
+/*Revisar TODO desde acá*/
 
 @media screen and (max-width: 612px) {
     body {
@@ -266,6 +308,7 @@
     }
 }
 
+
 @media screen and (max-width: 500px) {
     body {
         background-image: none; 
@@ -276,7 +319,16 @@
     }
 
     main .hero {
-        padding: 80px; 
+        padding: 50px;
+    }
+
+    main .hero div h1 {
+        font-size: 40px;
+    }
+
+    main .hero div p {
+        font-size: 20px;
+        padding: 10px;
     }
 
     main .imagenplanta p {
@@ -304,7 +356,6 @@
         width: 100%;
     }
 }
-
 
 @media screen and (max-width: 428px) {
     header div h1 {
