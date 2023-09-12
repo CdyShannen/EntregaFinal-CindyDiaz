@@ -294,21 +294,22 @@ main .hero {
   align-items: center;
   justify-content: center;
   min-height: 800px; }
-  main .hero div h1 {
-    font-size: 60px;
-    font-family: "Fjalla One", sans-serif;
-    text-align: center;
-    color: white; }
-  main .hero div p {
-    font-size: 30px;
-    font-family: "Fjalla One", sans-serif;
-    text-align: center;
-    color: #f7f1f1;
-    background-color: rgba(0, 0, 0, 0.705);
-    width: 100%;
-    max-width: 800px;
-    padding: 20px;
-    margin: auto; }
+  main .hero div {
+    max-width: 500px; }
+    main .hero div h1 {
+      font-size: 60px;
+      font-family: "Fjalla One", sans-serif;
+      text-align: center;
+      color: white; }
+    main .hero div p {
+      font-size: 30px;
+      font-family: "Fjalla One", sans-serif;
+      text-align: center;
+      color: #f7f1f1;
+      background-color: rgba(0, 0, 0, 0.705);
+      width: 100%;
+      padding: 20px;
+      margin: auto; }
 
 main .imagenplanta {
   flex: wrap;

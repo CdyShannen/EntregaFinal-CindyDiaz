@@ -78,6 +78,7 @@ main {
         justify-content: center;
         min-height: 800px;
         div {
+            max-width: 500px;
             h1 {
                 font-size: 60px;
                 font-family: "Fjalla One", sans-serif;
@@ -91,7 +92,6 @@ main {
                 color: rgb(247, 241, 241);
                 background-color: rgba(0, 0, 0, 0.705);
                 width: 100%;
-                max-width: 800px;
                 padding: 20px;
                 margin: auto;
             }
