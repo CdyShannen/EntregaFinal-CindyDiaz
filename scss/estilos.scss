@@ -73,7 +73,10 @@ main {
         background-image: url(../images/plantas-index-header.jpg);
         background-repeat: no-repeat;
         background-size: cover;
-        padding: 200px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 800px;
         div {
             h1 {
                 font-size: 60px;
@@ -88,7 +91,9 @@ main {
                 color: rgb(247, 241, 241);
                 background-color: rgba(0, 0, 0, 0.705);
                 width: 100%;
+                max-width: 800px;
                 padding: 20px;
+                margin: auto;
             }
         }
     }
@@ -96,9 +101,9 @@ main {
         @extend %flex;
         flex: wrap;
         margin: 30px;
-        background-color:$color-primario;
+        background-color: $color-primario;
         p {
-            font-size: 20px;
+            font-size: 25px;
             font-weight: 300px;
             font-family:
                 system-ui,
@@ -118,7 +123,7 @@ main {
             padding: 20px;
             span{
                 color: $color-secundario;
-                font-size: 30px;
+                font-size: 35px;
                 font-family: "Fjalla One", sans-serif;
                 font-weight: 300px;
             }
