@@ -100,7 +100,7 @@ main {
     .imagenplanta {
         @extend %flex;
         flex: wrap;
-        margin: 30px;
+        margin: 10rem;
         background-color: $color-primario;
         p {
             font-size: 25px;
@@ -140,11 +140,9 @@ main {
             margin: 20px;
         }
         div {
-            width: 300px;
-            height: 400px;
             text-align: center;
             font-family: "Fjalla One", sans-serif;
-            margin: 25px;
+            margin: 1rem;
             display: inline-block;
             img {
                 width: 250px;

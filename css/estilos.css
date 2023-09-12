@@ -313,7 +313,7 @@ main .hero {
 
 main .imagenplanta {
   flex: wrap;
-  margin: 30px;
+  margin: 10rem;
   background-color: black; }
   main .imagenplanta p {
     font-size: 25px;
@@ -341,11 +341,9 @@ main .index {
     font-size: 50px;
     margin: 20px; }
   main .index div {
-    width: 300px;
-    height: 400px;
     text-align: center;
     font-family: "Fjalla One", sans-serif;
-    margin: 25px;
+    margin: 1rem;
     display: inline-block; }
     main .index div img {
       width: 250px;
