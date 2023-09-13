@@ -371,3 +371,17 @@
         width: 100%;
     }
 }
+
+@media (max-width: 380px) {
+    .imagenplanta p {
+        font-size: 18px;
+        padding: 10px;
+        max-width: 100%;
+    }
+
+    .imagenplanta p span {
+        font-size: 28px;
+        max-width: 100%;
+    }
+}
+

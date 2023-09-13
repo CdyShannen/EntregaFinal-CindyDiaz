@@ -99,12 +99,11 @@ main {
     }
     .imagenplanta {
         @extend %flex;
-        flex: wrap;
-        margin: 10rem;
         background-color: $color-primario;
+        width: auto;
+        min-height: 400px;
         p {
             font-size: 25px;
-            font-weight: 300px;
             font-family:
                 system-ui,
                 -apple-system,
@@ -119,13 +118,16 @@ main {
                 sans-serif;
             text-align: center;
             color: $color-terciario;
-            width: 100%;
+            max-width: 100%;
             padding: 20px;
-            span{
+            margin: 0;
+            box-sizing: border-box;
+            span {
                 color: $color-secundario;
-                font-size: 35px;
+                font-size: 30px;
                 font-family: "Fjalla One", sans-serif;
-                font-weight: 300px;
+                display: inline-block;
+                max-width: 100%;
             }
         }
     }
@@ -137,7 +139,6 @@ main {
         h2 {
             font-family: "Fjalla One", sans-serif;
             font-size: 50px;
-            margin: 20px;
         }
         div {
             text-align: center;
