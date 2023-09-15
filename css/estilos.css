@@ -345,7 +345,6 @@ main .index {
   font-size: 30px;
   color: black;
   text-align: center;
-  padding: 60px;
   width: 100%; }
   main .index h2 {
     font-family: "Fjalla One", sans-serif;
@@ -353,7 +352,6 @@ main .index {
   main .index div {
     text-align: center;
     font-family: "Fjalla One", sans-serif;
-    margin: 1rem;
     display: inline-block; }
     main .index div img {
       width: 250px;
@@ -463,7 +461,7 @@ main .valores {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex: wrap;
+  flex-wrap: wrap;
   margin: 30px;
   color: black; }
   main .valores div {
@@ -495,7 +493,7 @@ main .valores-2 {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex: wrap;
+  flex-wrap: wrap;
   background-image: url(../images/valores-filosofia.jpg?);
   background-repeat: no-repeat;
   background-size: cover; }
@@ -516,7 +514,7 @@ main .valores-2 {
   100% {
     transform: translateX(0); } }
   main .valores-2 ul {
-    color: black;
+    color: white;
     font-size: 20px;
     padding: 30px;
     margin-top: 10px; }

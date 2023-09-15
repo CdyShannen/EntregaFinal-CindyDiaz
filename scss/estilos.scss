@@ -134,7 +134,6 @@ main {
     .index {
         @include text("Fjalla One" sans-serif, 30px, $color-primario);
         text-align: center;
-        padding: 60px;
         width: 100%;
         h2 {
             font-family: "Fjalla One", sans-serif;
@@ -143,7 +142,6 @@ main {
         div {
             text-align: center;
             font-family: "Fjalla One", sans-serif;
-            margin: 1rem;
             display: inline-block;
             img {
                 width: 250px;
@@ -282,7 +280,7 @@ main {
     }
     .valores {
         @include flex(flex, space-between, center);
-        flex: wrap;
+        flex-wrap: wrap;
         margin: 30px;
         color: black;
         div {
@@ -318,7 +316,7 @@ main {
     }
     .valores-2 {
         @include flex(flex, center, center);
-        flex: wrap;
+        flex-wrap: wrap;
         background-image: url(../images/valores-filosofia.jpg?);
         background-repeat: no-repeat;
         background-size: cover;
@@ -343,7 +341,7 @@ main {
             }
         }
         ul {
-            color: $color-primario;
+            color: $color-terciario;
             font-size: 20px;
             padding: 30px;
             margin-top: 10px;
