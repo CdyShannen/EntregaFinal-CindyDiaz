@@ -5,7 +5,8 @@
   box-sizing: border-box; }
 
 .boton-nav {
-  border: 2px solid black; }
+  border: 2px solid black;
+  margin: 10px; }
   .boton-nav:hover {
     background-color: #033319;
     color: white; }
@@ -292,6 +293,8 @@ body {
         display: flex; }
         body header nav div div ul li {
           margin: 0 10px; }
+      body header nav div div form .d-flex {
+        padding: 10px; }
 
 main .hero {
   text-align: center;
