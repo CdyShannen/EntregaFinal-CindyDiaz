@@ -17,7 +17,7 @@ class ProductoController {
   }
 
   cargarProductosJSON() {
-    fetch("api.JSON")
+    fetch("../js/api.json")
       .then((Response) => Response.json())
       .then((data) => {
         data.forEach((producto) => {
@@ -58,7 +58,7 @@ class NuevaCompra {
     }
     localStorage.setItem("productos", JSON.stringify(this.productos));
   }
-
+ 
   descripcion() {
     let html = `<div>`;
     let total = 0;
@@ -80,7 +80,7 @@ class NuevaCompra {
 const productos = new ProductoController();
 const miNuevaCompra = new NuevaCompra();
 
-// Guardado en el local storage al reiniciar la página
+//Guardado en el local storage al reiniciar la pagina
 const carritoData = localStorage.getItem("productos");
 if (carritoData) {
   miNuevaCompra.productos = JSON.parse(carritoData);
@@ -151,7 +151,6 @@ botonesAgregarCarrito.forEach(function(boton) {
 
 //Formulario
 let form = document.getElementById('contact-form');
-
 // Envío del formulario y  evita el envío del formulario por defecto
 form.addEventListener('submit', function(event) {
   event.preventDefault();
