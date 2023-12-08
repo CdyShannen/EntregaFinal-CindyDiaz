@@ -69,6 +69,20 @@ body {
                 }
             }
         }
+        .cart-container {
+            border: 3px solid white;
+            border-radius: 5px;
+            width: 25%;
+            height: 100%;
+            position: fixed;
+            right: 0;
+            top: 0;
+            z-index: 999;
+            display: none;
+            background-color: white;
+        } 
+        .cart-container--visible {
+            display: block
     }
 }
 
@@ -473,4 +487,5 @@ footer {
             }
         }
     }
+}
 }

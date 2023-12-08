@@ -1,0 +1,44 @@
+[
+    {
+        "id": "1",
+        "nombre": "potus",
+        "precio": 2500,
+        "cantidad": 1
+    },
+    {
+        "id": "2",
+        "nombre": "sansevieria",
+        "precio": 3500,
+        "cantidad": 1
+    },
+    {
+        "id": "3",
+        "nombre": "strelitzia",
+        "precio": 5500,
+        "cantidad": 1
+    },
+    {
+        "id": "4",
+        "nombre": "palodeagua",
+        "precio": 2500,
+        "cantidad": 1
+    },
+    {
+        "id": "5",
+        "nombre": "maceta-tempano",
+        "precio": 10000,
+        "cantidad": 1
+    },
+    {
+        "id": "6",
+        "nombre": "maceta-carlota",
+        "precio": 33000,
+        "cantidad": 1
+    },
+    {
+        "id": "7",
+        "nombre": "maceta-luna",
+        "precio": 25500,
+        "cantidad": 1
+    }
+]

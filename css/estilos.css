@@ -23,7 +23,7 @@
 .index:hover::before {
   opacity: 1; }
 
-main .imagenplanta {
+body main .imagenplanta {
   display: flex;
   justify-content: space-between;
   align-items: center; }
@@ -295,187 +295,157 @@ body {
           margin: 0 10px; }
       body header nav div div form .d-flex {
         padding: 10px; }
-
-main .hero {
-  text-align: center;
-  width: 100%;
-  background-image: url(../images/plantas-index-header.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 800px; }
-  main .hero div {
-    max-width: 500px; }
-    main .hero div h1 {
+    body header .cart-container {
+      border: 3px solid white;
+      border-radius: 5px;
+      width: 25%;
+      height: 100%;
+      position: fixed;
+      right: 0;
+      top: 0;
+      z-index: 999;
+      display: none;
+      background-color: white; }
+    body header .cart-container--visible {
+      display: block; }
+  body main .hero {
+    text-align: center;
+    width: 100%;
+    background-image: url(../images/plantas-index-header.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 800px; }
+    body main .hero div {
+      max-width: 500px; }
+      body main .hero div h1 {
+        font-size: 60px;
+        font-family: "Fjalla One", sans-serif;
+        text-align: center;
+        color: white; }
+      body main .hero div p {
+        font-size: 30px;
+        font-family: "Fjalla One", sans-serif;
+        text-align: center;
+        color: #f7f1f1;
+        background-color: rgba(0, 0, 0, 0.705);
+        width: 100%;
+        padding: 20px;
+        margin: auto; }
+  body main .imagenplanta {
+    background-color: black;
+    width: auto;
+    min-height: 400px; }
+    body main .imagenplanta p {
+      font-size: 25px;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neues", sans-serif;
+      text-align: center;
+      color: white;
+      max-width: 100%;
+      padding: 20px;
+      margin: 0;
+      box-sizing: border-box; }
+      body main .imagenplanta p span {
+        color: #033319;
+        font-size: 30px;
+        font-family: "Fjalla One", sans-serif;
+        display: inline-block;
+        max-width: 100%; }
+  body main .index {
+    font-family: "Fjalla One" sans-serif;
+    font-size: 30px;
+    color: black;
+    text-align: center;
+    width: 100%; }
+    body main .index h2 {
+      font-family: "Fjalla One", sans-serif;
+      font-size: 50px; }
+    body main .index div {
+      text-align: center;
+      font-family: "Fjalla One", sans-serif;
+      display: inline-block; }
+      body main .index div img {
+        width: 250px;
+        height: 300px;
+        transition: all 0.3s ease; }
+      body main .index div h3 {
+        font-family: "Fjalla One", sans-serif;
+        font-size: 30px;
+        margin-top: 20px; }
+  body main .productos h1 {
+    font-family: "Fjalla One" sans-serif;
+    font-size: 30px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.507);
+    text-align: center;
+    font-weight: 300px;
+    padding: 15px; }
+  body main .productos div img {
+    max-width: 300px;
+    max-height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; }
+  body main .productos > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: "Fjalla One", sans-serif;
+    margin: 40px;
+    padding: 30px;
+    flex-wrap: wrap;
+    color: black; }
+  body main section h1 {
+    font-family: "Fjalla One" sans-serif;
+    font-size: 30px;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: 300;
+    padding: 15px;
+    margin: 20px; }
+  body main .macetas {
+    display: flex;
+    align-items: center; }
+    body main .macetas .imagen-maceta {
+      flex: 0 0 auto;
+      margin: 35px; }
+      body main .macetas .imagen-maceta img {
+        width: 300px;
+        height: 350px; }
+    body main .macetas .textomacetas {
+      flex: 1;
+      font-size: 20px;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+      margin: 30px;
+      flex-wrap: wrap; }
+      body main .macetas .textomacetas h2 {
+        text-align: center;
+        color: black;
+        font-family: "Fjalla One", sans-serif; }
+      body main .macetas .textomacetas p {
+        color: white;
+        background-color: rgba(0, 0, 0, 0.507);
+        font-size: 25px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif; }
+  body main .filosofia {
+    text-align: center;
+    width: 100%;
+    background-image: url(../images/historia-filosofia.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 100px; }
+    body main .filosofia div h2 {
       font-size: 60px;
       font-family: "Fjalla One", sans-serif;
       text-align: center;
-      color: white; }
-    main .hero div p {
-      font-size: 30px;
-      font-family: "Fjalla One", sans-serif;
-      text-align: center;
-      color: #f7f1f1;
-      background-color: rgba(0, 0, 0, 0.705);
-      width: 100%;
-      padding: 20px;
-      margin: auto; }
-
-main .imagenplanta {
-  background-color: black;
-  width: auto;
-  min-height: 400px; }
-  main .imagenplanta p {
-    font-size: 25px;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neues", sans-serif;
-    text-align: center;
-    color: white;
-    max-width: 100%;
-    padding: 20px;
-    margin: 0;
-    box-sizing: border-box; }
-    main .imagenplanta p span {
-      color: #033319;
-      font-size: 30px;
-      font-family: "Fjalla One", sans-serif;
-      display: inline-block;
-      max-width: 100%; }
-
-main .index {
-  font-family: "Fjalla One" sans-serif;
-  font-size: 30px;
-  color: black;
-  text-align: center;
-  width: 100%; }
-  main .index h2 {
-    font-family: "Fjalla One", sans-serif;
-    font-size: 50px; }
-  main .index div {
-    text-align: center;
-    font-family: "Fjalla One", sans-serif;
-    display: inline-block; }
-    main .index div img {
-      width: 250px;
-      height: 300px;
-      transition: all 0.3s ease; }
-    main .index div h3 {
-      font-family: "Fjalla One", sans-serif;
-      font-size: 30px;
-      margin-top: 20px; }
-
-main .productos h1 {
-  font-family: "Fjalla One" sans-serif;
-  font-size: 30px;
-  color: white;
-  background-color: rgba(0, 0, 0, 0.507);
-  text-align: center;
-  font-weight: 300px;
-  padding: 15px; }
-
-main .productos div img {
-  max-width: 300px;
-  max-height: 300px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap; }
-
-main .productos > div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  font-family: "Fjalla One", sans-serif;
-  margin: 40px;
-  padding: 30px;
-  flex-wrap: wrap;
-  color: black; }
-
-main section h1 {
-  font-family: "Fjalla One" sans-serif;
-  font-size: 30px;
-  color: black;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  font-weight: 300;
-  padding: 15px;
-  margin: 20px; }
-
-main .macetas {
-  display: flex;
-  align-items: center; }
-  main .macetas .imagen-maceta {
-    flex: 0 0 auto;
-    margin: 35px; }
-    main .macetas .imagen-maceta img {
-      width: 300px;
-      height: 350px; }
-  main .macetas .textomacetas {
-    flex: 1;
-    font-size: 20px;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-    margin: 30px;
-    flex-wrap: wrap; }
-    main .macetas .textomacetas h2 {
-      text-align: center;
       color: black;
-      font-family: "Fjalla One", sans-serif; }
-    main .macetas .textomacetas p {
-      color: white;
-      background-color: rgba(0, 0, 0, 0.507);
-      font-size: 25px;
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif; }
-
-main .filosofia {
-  text-align: center;
-  width: 100%;
-  background-image: url(../images/historia-filosofia.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding: 100px; }
-  main .filosofia div h2 {
-    font-size: 60px;
-    font-family: "Fjalla One", sans-serif;
-    text-align: center;
-    color: black;
-    animation: slide 5s ease-in-out; }
-
-@keyframes slide {
-  0% {
-    transform: translateX(0); }
-  50% {
-    transform: translateX(10px); }
-  100% {
-    transform: translateX(0); } }
-  main .filosofia div p {
-    font-size: 25px;
-    font-family: "Fjalla One", sans-serif;
-    text-align: center;
-    color: #f7f1f1;
-    background-color: rgba(0, 0, 0, 0.705);
-    width: 100%;
-    padding: 20px; }
-
-main .valores {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  margin: 30px;
-  color: black; }
-  main .valores div {
-    flex-direction: column;
-    padding: 20px;
-    margin: auto; }
-    main .valores div h2 {
-      font-family: "Fjalla One", sans-serif;
-      font-size: 40px;
-      padding: 15px;
-      text-align: center;
       animation: slide 5s ease-in-out; }
 
 @keyframes slide {
@@ -485,29 +455,31 @@ main .valores {
     transform: translateX(10px); }
   100% {
     transform: translateX(0); } }
-    main .valores div p {
+    body main .filosofia div p {
+      font-size: 25px;
+      font-family: "Fjalla One", sans-serif;
+      text-align: center;
+      color: #f7f1f1;
       background-color: rgba(0, 0, 0, 0.705);
-      color: white;
-      font-size: 20px;
-      padding: 30px;
-      margin-top: 10px; }
-
-main .valores-2 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  background-image: url(../images/valores-filosofia.jpg?);
-  background-repeat: no-repeat;
-  background-size: cover; }
-  main .valores-2 h2 {
-    font-family: "Fjalla One", sans-serif;
-    font-size: 40px;
-    padding: 20px;
-    text-align: center;
-    margin: 10px;
-    color: black;
-    animation: slide 5s ease-in-out; }
+      width: 100%;
+      padding: 20px; }
+  body main .valores {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 30px;
+    color: black; }
+    body main .valores div {
+      flex-direction: column;
+      padding: 20px;
+      margin: auto; }
+      body main .valores div h2 {
+        font-family: "Fjalla One", sans-serif;
+        font-size: 40px;
+        padding: 15px;
+        text-align: center;
+        animation: slide 5s ease-in-out; }
 
 @keyframes slide {
   0% {
@@ -516,110 +488,134 @@ main .valores-2 {
     transform: translateX(10px); }
   100% {
     transform: translateX(0); } }
-  main .valores-2 ul {
+      body main .valores div p {
+        background-color: rgba(0, 0, 0, 0.705);
+        color: white;
+        font-size: 20px;
+        padding: 30px;
+        margin-top: 10px; }
+  body main .valores-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-image: url(../images/valores-filosofia.jpg?);
+    background-repeat: no-repeat;
+    background-size: cover; }
+    body main .valores-2 h2 {
+      font-family: "Fjalla One", sans-serif;
+      font-size: 40px;
+      padding: 20px;
+      text-align: center;
+      margin: 10px;
+      color: black;
+      animation: slide 5s ease-in-out; }
+
+@keyframes slide {
+  0% {
+    transform: translateX(0); }
+  50% {
+    transform: translateX(10px); }
+  100% {
+    transform: translateX(0); } }
+    body main .valores-2 ul {
+      color: white;
+      font-size: 20px;
+      padding: 30px;
+      margin-top: 10px; }
+  body main section h1 {
     color: white;
-    font-size: 20px;
-    padding: 30px;
-    margin-top: 10px; }
-
-main section h1 {
-  color: white;
-  background-color: rgba(0, 0, 0, 0.507);
-  text-align: center;
-  font-size: 30px;
-  font-family: "Fjalla One", sans-serif;
-  font-weight: 300;
-  padding: 15px; }
-
-main section .cuidados {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  align-items: center;
-  text-align: center; }
-
-main section div > div {
-  flex-basis: calc(25% - 80px);
-  text-align: center;
-  font-family: "Fjalla One", sans-serif;
-  margin: 20px;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  color: black; }
-  main section div > div img {
-    max-width: 100%;
-    margin-bottom: 10px; }
-  main section div > div h2,
-  main section div > div p {
-    margin: 10px 0; }
-
-main h1 {
-  color: black;
-  text-align: center;
-  font-size: 40px;
-  font-family: "Fjalla One", sans-serif;
-  font-weight: 300px;
-  margin-top: 15px; }
-
-main form {
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 20px;
-  background: #fff;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  margin-bottom: 15px; }
-  main form .formulario {
-    margin-bottom: 20px;
-    padding: 20px;
-    border: 10px solid black;
-    border-radius: 10px; }
-    main form .formulario label {
-      display: block;
-      margin-bottom: 5px;
-      font-weight: bold; }
-    main form .formulario textarea {
-      width: 100%;
-      padding: 10px;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-      font-size: 16px; }
-  main form button {
-    display: block;
-    margin-top: 10px;
-    padding: 10px 20px;
-    border: 2px solid black;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.507);
+    text-align: center;
+    font-size: 30px;
     font-family: "Fjalla One", sans-serif;
-    background-color: #033319;
-    color: white; }
-    main form button:hover {
-      background: white;
-      color: #033319; }
-
-footer.footer-grids {
-  background-color: rgba(0, 0, 0, 0.8);
-  padding: 20px;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 20px;
-  justify-content: center;
-  text-align: center; }
-  footer.footer-grids div {
-    font-family: "Segoe UI", Roboto, Arial, sans-serif;
-    color: white; }
-    footer.footer-grids div img {
-      width: 80px;
-      height: 80px;
-      border-radius: 50%;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); }
-    footer.footer-grids div h2 {
-      margin: 10px 0;
-      font-size: 1.2rem; }
-    footer.footer-grids div p {
-      line-height: 1.4; }
+    font-weight: 300;
+    padding: 15px; }
+  body main section .cuidados {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center; }
+  body main section div > div {
+    flex-basis: calc(25% - 80px);
+    text-align: center;
+    font-family: "Fjalla One", sans-serif;
+    margin: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: black; }
+    body main section div > div img {
+      max-width: 100%;
+      margin-bottom: 10px; }
+    body main section div > div h2,
+    body main section div > div p {
+      margin: 10px 0; }
+  body main h1 {
+    color: black;
+    text-align: center;
+    font-size: 40px;
+    font-family: "Fjalla One", sans-serif;
+    font-weight: 300px;
+    margin-top: 15px; }
+  body main form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px; }
+    body main form .formulario {
+      margin-bottom: 20px;
+      padding: 20px;
+      border: 10px solid black;
+      border-radius: 10px; }
+      body main form .formulario label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold; }
+      body main form .formulario textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 16px; }
+    body main form button {
+      display: block;
+      margin-top: 10px;
+      padding: 10px 20px;
+      border: 2px solid black;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      margin: 0 auto;
+      font-family: "Fjalla One", sans-serif;
+      background-color: #033319;
+      color: white; }
+      body main form button:hover {
+        background: white;
+        color: #033319; }
+  body footer.footer-grids {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    text-align: center; }
+    body footer.footer-grids div {
+      font-family: "Segoe UI", Roboto, Arial, sans-serif;
+      color: white; }
+      body footer.footer-grids div img {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); }
+      body footer.footer-grids div h2 {
+        margin: 10px 0;
+        font-size: 1.2rem; }
+      body footer.footer-grids div p {
+        line-height: 1.4; }
