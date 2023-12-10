@@ -1,3 +1,5 @@
+let modalText = document.getElementById("content-modal");
+
 class Producto {
   constructor(num, nombre, precio, cantidad) {
     this.id = num;
@@ -127,46 +129,83 @@ class Carrito {
 }
 
 //Obtener botones
-let botonesAgregarCarrito = document.querySelectorAll('.agregar-carrito');
+const agregarEventos = () => {
 
-/*// Evento click para cada botón
-botonesAgregarCarrito.forEach(function(boton) {
-    boton.addEventListener('click', function() {
-        let nombre = boton.dataset.nombre;
-        let precio = Number(boton.dataset.precio);
+  // Botones de plantas
+  const btn1 = document.getElementById("btn1");
+  const btn2 = document.getElementById("btn2");
+  const btn3 = document.getElementById("btn3");
+  const btn4 = document.getElementById("btn4");
 
-        // Objeto para representar el producto
-        let producto = {
-            nombre: nombre,
-            precio: precio,
-        };
+  btn1.addEventListener("click", () => {
+    miNuevaCompra.agregarProducto(productos, "1");
+    modalText.innerHTML = miNuevaCompra.descripcion();
 
-        // Agregar al carrito de compras
-        carrito.push(producto);
+    Toastify({
+      text: "Producto añadido exitosamente",
+      duration: 3000,
+    }).showToast();
+  });
 
-        // Mostrar el carrito de compras actualizado
-        console.log(carrito);
-    });
-});*/
+  btn2.addEventListener("click", () => {
+    miNuevaCompra.agregarProducto(productos, "2");
+    modalText.innerHTML = miNuevaCompra.descripcion();
+    Toastify({
+      text: "Producto añadido exitosamente",
+      duration: 3000,
+    }).showToast();
+  });
 
-//Formulario
-let form = document.getElementById('contact-form');
-// Envío del formulario y  evita el envío del formulario por defecto
-form.addEventListener('submit', function(event) {
-  event.preventDefault();
+  btn3.addEventListener("click", () => {
+    miNuevaCompra.agregarProducto(productos, "3");
+    modalText.innerHTML = miNuevaCompra.descripcion();
+    Toastify({
+      text: "Producto añadido exitosamente",
+      duration: 3000,
+    }).showToast();
+  });
 
-// Obtencion de los valores de los campos del formulario
-  let nombre = document.getElementById('nombre-apellido').value;
-  let telefono = document.getElementById('telefono').value;
-  let email = document.getElementById('email').value;
-  let comentarios = document.getElementById('comentarios').value;
+  btn4.addEventListener("click", () => {
+    miNuevaCompra.agregarProducto(productos, "4");
+    modalText.innerHTML = miNuevaCompra.descripcion();
+    Toastify({
+      text: "Producto añadido exitosamente",
+      duration: 3000,
+    }).showToast();
+  });
 
-// Guarda los valores en el LocalStorage
-  localStorage.setItem('nombre', nombre);
-  localStorage.setItem('telefono', telefono);
-  localStorage.setItem('email', email);
-  localStorage.setItem('comentarios', comentarios);
+  // Botones de maceta
+  const btn5 = document.getElementById("btn5");
+  const btn6 = document.getElementById("btn6");
+  const btn7 = document.getElementById("btn7");
 
-// Cambiar esto por librerias, mensaje final del formulario
-  alert('¡Formulario enviado con éxito!');
-});
+  btn5.addEventListener("click", () => {
+    miNuevaCompra.agregarProducto(productos, "5");
+    modalText.innerHTML = miNuevaCompra.descripcion();
+    Toastify({
+      text: "Producto añadido exitosamente",
+      duration: 3000,
+    }).showToast();
+  });
+
+  btn6.addEventListener("click", () => {
+    miNuevaCompra.agregarProducto(productos, "6");
+    modalText.innerHTML = miNuevaCompra.descripcion();
+    Toastify({
+      text: "Producto añadido exitosamente",
+      duration: 3000,
+    }).showToast();
+  });
+
+  btn7.addEventListener("click", () => {
+    miNuevaCompra.agregarProducto(productos, "7");
+    modalText.innerHTML = miNuevaCompra.descripcion();
+    Toastify({
+      text: "Producto añadido exitosamente",
+      duration: 3000,
+    }).showToast();
+  });
+
+};
+
+agregarEventos();
