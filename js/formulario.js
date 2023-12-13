@@ -1,8 +1,8 @@
 //Formulario
 let form = document.getElementById('contact-form');
 // Envío del formulario y  evita el envío del formulario por defecto
-form.addEventListener('submit', function(event) {
-event.preventDefault();
+form.addEventListener('submit'), function(event) {
+event.preventDefault();}
 
 // Obtencion de los valores de los campos del formulario
 let nombre = document.getElementById('nombre-apellido').value;
@@ -17,5 +17,10 @@ localStorage.setItem('email', email);
 localStorage.setItem('comentarios', comentarios);
 
 // Cambiar esto por librerias, mensaje final del formulario
-alert('¡Formulario enviado con éxito!');
-});
+function mostrarSweetAlert() {
+    Swal.fire({
+    title: '¡Su consulta ha sido enviada con exito!',
+    icon: 'success',
+    confirmButtonText: 'Aceptar'
+    });
+}
